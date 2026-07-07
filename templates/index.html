@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Hurricane Damage Classification</title>
+
+    <style>
+
+        body{
+
+            background:#f2f2f2;
+            font-family:Arial;
+            text-align:center;
+
+        }
+
+        .container{
+
+            width:700px;
+            margin:auto;
+            background:white;
+            padding:25px;
+            margin-top:40px;
+            border-radius:10px;
+            box-shadow:0 0 10px gray;
+
+        }
+
+        img{
+
+            margin-top:20px;
+            border-radius:10px;
+
+        }
+
+        input{
+
+            margin-top:20px;
+
+        }
+
+        button{
+
+            margin-top:20px;
+            padding:10px 20px;
+            font-size:18px;
+            cursor:pointer;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Hurricane Damage Classification</h1>
+
+<form method="POST" enctype="multipart/form-data">
+
+<input type="file" name="image" required>
+
+<br>
+
+<button type="submit">
+
+Predict
+
+</button>
+
+</form>
+
+{% if image %}
+
+<h2>Uploaded Image</h2>
+
+<img src="{{ url_for('static', filename='uploads/' + image) }}" width="300">
+
+<h2>Prediction :</h2>
+
+<h1>{{ prediction }}</h1>
+
+<h2>
+
+Confidence :
+
+{{ "%.2f"|format(confidence) }} %
+
+</h2>
+
+{% endif %}
+
+</div>
+
+</body>
+
+</html>
