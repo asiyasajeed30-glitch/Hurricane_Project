@@ -187,9 +187,11 @@ docs/
 Contains screenshots used in this README to demonstrate the application.
 
 
-----
 
+```
 # 6. Installation and Setup
+
+```
 
 
 Prerequisites
@@ -261,6 +263,7 @@ static/uploads/
 
  ```
  # 7. Usage
+
  ```
 
 Start the Flask application:
@@ -295,10 +298,10 @@ Prediction: damage
 Confidence: 96.42%
 
 
----
 
  ```
  # 8. Screenshots / Demo
+
  ```
 
 
@@ -306,21 +309,24 @@ The following screenshots show the actual Flask application and prediction resul
 
 ### Application Home Page
 
-![Hurricane Damage Classification Home Page](docs/home-page-1.png)
+![Application Home Page](docs/home-page-1.png)
 
 ### Image Upload Interface
 
-![Hurricane Damage Classification Upload Interface](docs/home-page-2.png)
+![Image Upload Interface](docs/home-page-2.png)
 
 ### Damage Prediction
 
-![Hurricane Damage Prediction](docs/damage-prediction.png)
+![Damage Prediction](docs/damage-prediction.png)
 
 ### No Damage Prediction
 
-![Hurricane No Damage Prediction](docs/no-damage-prediction.png)
+![No Damage Prediction](docs/no-damage-prediction.png)
 
-Application Flow
+
+**Application Flow**
+
+
 Upload Image
       ↓
 Click Predict
