@@ -302,7 +302,7 @@ Confidence: 96.42%
  ```
  # 8. Screenshots / Demo
 
- ```
+ 
 
 
 The following screenshots show the actual Flask application and prediction results.
