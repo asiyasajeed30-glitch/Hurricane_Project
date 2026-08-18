@@ -104,7 +104,8 @@ The application follows a simple machine-learning inference architecture:
                     │     index.html      │
                     └─────────────────────┘
 
-Prediction Flow
+**Prediction Flow**
+
 Image Upload
      ↓
 Secure Filename
@@ -126,7 +127,14 @@ Damage / No Damage
 Confidence Score
      ↓
 Display Result
-5. Project Structure
+
+---
+
+```
+# 5. Project Structure
+```
+
+
 Hurricane_Project/
 │
 ├── app.py
@@ -178,7 +186,12 @@ docs/
 
 Contains screenshots used in this README to demonstrate the application.
 
-6. Installation and Setup
+
+----
+
+# 6. Installation and Setup
+
+
 Prerequisites
 
 Make sure the following are installed:
@@ -243,7 +256,12 @@ The current application does not use a database.
 Uploaded images are stored locally in:
 
 static/uploads/
-7. Usage
+
+
+
+ ```
+ # 7. Usage
+ ```
 
 Start the Flask application:
 
@@ -252,7 +270,9 @@ python app.py
 The application will run locally at:
 
 http://127.0.0.1:5000
-How to Use
+
+**How to Use**
+
 Open the application in a web browser.
 Click Choose File.
 Select a hurricane-related image.
@@ -273,9 +293,14 @@ Prediction: damage
 
 
 Confidence: 96.42%
-8. Screenshots / Demo
 
-## 8. Screenshots / Demo
+
+---
+
+ ```
+ # 8. Screenshots / Demo
+ ```
+
 
 The following screenshots show the actual Flask application and prediction results.
 
@@ -307,7 +332,11 @@ CNN Prediction
 Damage / No Damage
       ↓
 Confidence Score
-Live Demo
+
+
+
+
+**Live Demo**
 
 The application currently runs locally using Flask.
 
@@ -315,7 +344,13 @@ http://127.0.0.1:5000
 
 A public deployment can be added in a future version.
 
-9. API Documentation
+
+
+ ```
+ # 9. API Documentation
+
+ ```
+
 
 The current application does not expose a separate REST API.
 
@@ -360,7 +395,13 @@ Example:
 Prediction: damage
 Confidence: 96.42%
 
-10. Engineering Decisions
+
+```
+
+# # 10. Engineering Decisions
+```
+
+
 CNN for Image Classification
 
 A Convolutional Neural Network was selected because the project works with image data.
@@ -426,6 +467,7 @@ Preprocess Image
 CNN Inference
       ↓
 Display Prediction
+
 Local File Storage
 
 Uploaded images are currently stored in:
@@ -442,7 +484,14 @@ secure_filename()
 
 This prevents unsafe filenames from being directly used when saving uploaded files.
 
-11. Testing
+
+
+```
+# 11. Testing
+
+```
+
+
 Model Evaluation
 
 The trained CNN model was evaluated using a separate test dataset.
@@ -455,7 +504,9 @@ Classification Report
 
 Example evaluation:
 
-from sklearn.metrics import accuracy_score
+```
+
+**from sklearn.metrics import accuracy_score
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 
@@ -479,7 +530,10 @@ print(confusion_matrix(y_test, prediction))
 
 print("Classification Report:")
 print(classification_report(y_test, prediction))
-Flask Application Testing
+```
+**
+
+**Flask Application Testing**
 
 The deployed application was tested by:
 
@@ -499,7 +553,14 @@ Upload no-damage image	No-damage prediction is generated
 Submit image	Prediction is displayed
 Uploaded image	Image preview is displayed
 Start application	CNN model loads successfully
-12. Limitations
+
+
+---
+
+
+# 12. Limitations
+
+
 The model performs binary classification only.
 The available classes are limited to damage and no_damage.
 Prediction accuracy depends on the quality and diversity of the training dataset.
@@ -511,7 +572,14 @@ Prediction history is not stored in a database.
 User authentication is not implemented.
 The current application uses Flask's development server.
 The confidence score represents the model's prediction probability and should not be interpreted as guaranteed certainty.
-13. Future Improvements
+
+
+
+
+```
+# 13. Future Improvements
+
+```
 
 Possible improvements include:
 
@@ -525,7 +593,13 @@ Deploy the application to a public cloud platform.
 Add automated unit and integration testing.
 Use a production WSGI server for deployment.
 Improve the user interface and make it responsive for mobile devices.
-14. End-to-End Workflow
+
+
+
+```
+# 14. End-to-End Workflow
+
+```
                   HURRICANE IMAGE DATASET
                            │
                            ▼
@@ -564,7 +638,14 @@ Improve the user interface and make it responsive for mobile devices.
                            │
                            ▼
                     Web Interface
-15. Conclusion
+
+
+
+
+```
+# 15. Conclusion
+
+```
 
 This project demonstrates an end-to-end deep-learning workflow for hurricane image classification, from CNN model development and evaluation to Flask-based deployment.
 
@@ -574,17 +655,22 @@ Damage or No Damage
 
 along with a confidence score through a simple web interface.
 
-Author
+```
+# Author
+
+```
 
 Asiya S
 
 B.Tech Computer Science & Engineering
 
-Technologies
+```
+# Technologies
 
+```
 Python TensorFlow Keras CNN Flask NumPy Pillow HTML CSS Git GitHub
 
-License
+**License**
 
 This project is developed for educational and demonstration purposes.
 
